@@ -49,6 +49,9 @@ public class Calculator {
         System.out.println("Result of "+ a + " * "+ b + " = " + (a*b));
     }
     public static void div(int a,int b){
+        if(b==0){
+            System.out.println("Please enter other number");
+        }
         System.out.println("Result of "+ a + " / "+ b + " = " + (a/b));
     }
 
