@@ -1,3 +1,5 @@
+package com.basics;
+
 import java.util.Scanner;
 
 public class UpperLowerCheck {
@@ -5,12 +7,15 @@ public class UpperLowerCheck {
         System.out.println("Please enter a character: ");
         Scanner sc =new Scanner(System.in);
         char input= sc.next().charAt(0);
-
-        if (Character.isUpperCase(input)){
-            System.out.println("The entered character is Upper case");
+        if(Character.isAlphabetic(input)) {
+            if (Character.isUpperCase(input)) {
+                System.out.println("The entered character is Upper case");
+            } else if (Character.isLowerCase(input)) {
+                System.out.println("The entered character is Lower case");
+            }
         }
-        else if(Character.isLowerCase(input)){
-            System.out.println("The entered character is Lower case");
+        else{
+            System.out.println("Please Enter a character");
         }
     }
 }
