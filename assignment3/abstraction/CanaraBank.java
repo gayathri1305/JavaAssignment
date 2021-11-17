@@ -9,7 +9,7 @@ public class CanaraBank extends Bank{
             System.out.println("2000 * " + (money/2000));
             System.out.println("500 * "+ (money%2000)/500);
             System.out.println("200 * "+(money%500)/200);
-            
+
         }
 
     }

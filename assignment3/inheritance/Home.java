@@ -1,6 +1,6 @@
 package assignment3.inheritance;
 
-public class Home {
+public abstract class Home {
     String roomType;
     int lightCount;
 

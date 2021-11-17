@@ -24,12 +24,6 @@ public class CollegeDetails {
         coll.setDeptName("MECH");
         System.out.println("DepartmentName: "+coll.getDeptName());
 
-        //Fourth college and department name
-        coll.setCollegeName("Government College");
-        System.out.println("College Name: "+ coll.getCollegeName());
-
-        coll.setDeptName("CSE");
-        System.out.println("DepartmentName: "+coll.getDeptName());
 
 
     }
