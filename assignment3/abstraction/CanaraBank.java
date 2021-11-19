@@ -1,22 +1,22 @@
 package assignment3.abstraction;
 
 public class CanaraBank extends Bank{
-    int money =67800;
 
+    String name;
+    public CanaraBank(){
+        this.name="Canara";
+    }
     public void countCurrency() {
-        if(money>2000){
-            System.out.println("Money count:");
-            System.out.println("2000 * " + (money/2000));
-            System.out.println("500 * "+ (money%2000)/500);
-            System.out.println("200 * "+(money%500)/200);
-
-        }
+        System.out.println("The following Denomination available in "+ this.name+
+                " : "+"2000,500,200,100,50,20,10");
 
     }
 
     public static void main(String[] args) {
         CanaraBank canara= new CanaraBank();
         canara.countCurrency();
+        canara.bond();
     }
+
 
 }
